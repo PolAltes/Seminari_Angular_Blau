@@ -18,7 +18,7 @@ export class ColaboradoresComponent {
   users: User [];
   query = 'b';
   //Para recibir el usuario que proviene del componente usuario
-  @Input() usuario: User = new User();
+  @Input() usuario: User = { id: 0, name: '', age: 0, email: '' };
 
   constructor() {
     this.users = [];
